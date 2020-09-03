@@ -1,3 +1,18 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #1a5543;
+  }
+
+/*START HEADER*/
+#navbar-main {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+  }
+.navbar-brand {
+    white-space: normal;
+}
+  
 #logo-img {
     background: url('../images/Logo_LISComp.png') no-repeat;
     width: 175px;
@@ -16,6 +31,11 @@
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+
+#nav-list {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 #header-navbar > div{
@@ -40,5 +60,10 @@ h1 {
     text-align: right;
 }
 
+@media (max-width: 575px){
+    .d-xs-none{
+        display: none !important;
+    }
+}
 
 
