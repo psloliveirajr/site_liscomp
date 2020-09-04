@@ -7,95 +7,85 @@
     <title>LISComp</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light" id="navbar-main">
-        <div class="container-fluid">
-          <div class="row align-items-center justify-content-center">
-            <div id="header-navbar" class="navbar-header">
-              <div class="d-none d-lg-inline-flex">
-                <a class="navbar-brand" href="/"><img class="img-responsive" src="images/Logo_LISComp.png" alt="Item"></a>
-                <h1 class="text-center">Laboratório de Instrumentação e Simulação Computacional</h1>
-              </div>
-
-              <div class="d-lg-none">
-                <a class="navbar-brand d-xs-none" href="/"><img class="img-responsive" src="images/Logo_LISComp.png" alt="Item"></a>
-                <span class="text-center"><a class="navbar-brand" href="/">Laboratório de Instrumentação e Simulação Computacional</a></span>
-              </div>
-            </div>
+      <nav class="navbar navbar-expand-md p-0" id="navbar-main">
+        <div class="container-fluid flex-wrap p-0">
+          <div class="align-items-center row flex-grow-1 flex-nowrap justify-content-center" id="navbar-header">
+            <a href="index.html">
+              <img class="rounded mx-3" src="images/Logo_LISComp.png" alt="Item">
+            </a>
+            <a class="navbar-brand d-none d-sm-block text-wrap text-center" href="index.html">
+              Laboratório de Instrumentação e Simulação Computacional
+            </a> 
+     
+            <button id= "botao" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><title>menu</title><path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"></path></svg>
+            </button>
           </div>
 
-          <button id= "botao" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="row">
-            <div id="navbar-content" class="navbar-collapse collapse justify-content-center">
-              <ul id="nav-list" class="nav navbar-nav justify-content-center">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"><span>Home</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Laboratório Móvel</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Infraestrutura</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Prestação de Serviços</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Linhas de Pesquisa</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Equipe</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Produção Científica</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Projetos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Parcerias Internacionais</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contato</a>
-                </li>
-              </ul>
-            </div>
+          <div class="navbar-collapse collapse justify-content-center row sticky-top" id="navbar-content" >
+            <ul class="navbar-nav flex-wrap justify-content-center" id="nav-list">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><span>Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Laboratório Móvel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Infraestrutura</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Prestação de Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Linhas de Pesquisa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Equipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produção Científica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Parcerias Internacionais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <div id="main-content" class="container"></div>
+    <div id="main-content" class="container-fluid">  
+      
+    </div>
 
-    <footer class="panel-footer">
-      <div class="container">
-        <div class="row">
-          <section id="hours" class="col-sm-4">
-            <span>Hours:</span><br>
-            Sun-Thurs: 11:15am - 10:00pm<br>
-            Fri: 11:15am - 2:30pm<br>
-            Saturday Closed
-            <hr class="visible-xs">
-          </section>
-          <section id="address" class="col-sm-4">
-            <span>Address:</span><br>
-            7105 Reisterstown Road<br>
-            Baltimore, MD 21215
-            <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
-            <hr class="visible-xs">
-          </section>
-          <section id="testimonials" class="col-sm-4">
-            <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
-            <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
-          </section>
+    <footer>
+      <div class="container-fluid ">
+        <div class="row flex-grow-1 justify-content-center py-2" id="footer">
+          <div id="address" class="col-sm-12 col-md-4">
+            Instituto Federal de Educação Ciência e Tecnologia do Rio de Janeiro - Campus Paracambi (IFRJ-CPar)<br>
+            Laboratório de Instrumentação e Simulação Computacional 28<br>
+            R. Sebastião de Lacerda, S/N - Fábrica <br>
+            Paracambi - RJ, 26600-000 <br>
+            <hr class="d-md-none">
+          </div>
+          <div id="IFRJ" class="col-md-4 text-center">
+            <a href="index.html" id="logo-img">
+              <img class="rounded m-3" src="images/logo-ifrj.png" alt="Item" width="125px">
+            </a>
+          </div>
+          <hr class="col-md-11">
+          <div class="col-12 text-center">&copy; Copyright LISComp 2020</div>
         </div>
-        <div class="text-center">&copy; Copyright LISComp 2020</div>
       </div>
     </footer>
 

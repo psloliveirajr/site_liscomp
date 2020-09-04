@@ -1,49 +1,41 @@
 body {
     font-size: 16px;
-    background-color: #1f8a6a;
+    background: linear-gradient(180deg,#00c8ff,#0072ff)!important;
     font-family: 'Montserrat', sans-serif;
     color: #080808;
     overflow: hidden;
 }
 
+a {
+    color: #000000;
+}
+
+.navbar-brand {
+    font-size: 28px;
+}
 /*START HEADER*/
-#navbar-main {
+#navbar-header {
     color: rgb(0, 0, 0);
     background-color: #ffffff;
-  }
-.navbar-brand {
-    white-space: normal;
+    border-bottom: 2px solid #afafaf;
 }
-  
-#logo-img {
-    background: url('../images/Logo_LISComp.png') no-repeat;
-    width: 175px;
-    height: 175px;
-    margin: 10px 15px 10px 0; 
-  }
-
-.navbar .container, .navbar .container-fluid, .navbar .container-lg, .navbar .container-md, .navbar .container-sm, .navbar .container-xl {
-    display: -ms-flexbox;
-    display: block;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+#navbar-content {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-bottom: 2px solid #afafaf;
 }
 
 .navbar-toggler {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
     margin-top: 8px;
-    margin-right: 15px;
+    margin-right: 30px;
     margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.navbar svg {
+    height: 1.5em;
+    fill: rgb(25, 0, 255);
 }
 
 #nav-list {
@@ -51,37 +43,13 @@ body {
     padding-bottom: .5rem;
 }
 
-#header-navbar > div{
-    height: 10em;
-    display: flex;
-    align-items: center;
-    justify-content: center 
-}
-  #header-navbar > div h1 {
-    margin: 0 
+#footer {
+    color: rgb(0, 0, 0);
+    background:  #ffffff;
 }
 
-h1 {
-    font-size: 28px;
-}
-
-#botao {
-    position: absolute;
-    top: 0;
-    right: 0;
-    vertical-align: middle;
-    text-align: right;
-}
-
-@media (max-width: 575px){
-    .d-xs-none{
-        display: none !important;
+@media (min-width:576px){
+    .navbar-brand {
+        font-size: 20px;
     }
 }
-
-@media (min-width: 992px){
-    .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid, .navbar-expand-lg>.container-lg, .navbar-expand-lg>.container-md, .navbar-expand-lg>.container-sm, .navbar-expand-lg>.container-xl {
-    flex-wrap: wrap;
-    }
-}
-
