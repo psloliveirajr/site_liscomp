@@ -52,10 +52,6 @@ a {
 .home-section:first-of-type {
     padding-top: 50px;
 }
-.home-section {
-    padding: 110px 0 110px 0;
-}
-
 .avatar-circle {
     border-radius: 10%;
 }
