@@ -9,54 +9,62 @@
 		<link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="text-monospace">
     <header>
       <nav class="navbar navbar-expand-md p-0" id="navbar-main">
-        <div class="container-fluid flex-wrap p-0">
+        <div class="container-fluid flex-wrap">
           <div class="align-items-center row flex-grow-1 flex-nowrap justify-content-center" id="navbar-header">
             <a href="index.html">
               <img class="rounded mx-3" src="images/Logo_LISComp.png" alt="Item">
             </a>
-            <a class="navbar-brand d-none d-sm-block text-wrap text-center" href="index.html">
+            <a class="navbar-brand d-none d-sm-block text-wrap text-center font-weight-bold text-dark" href="index.html">
               Laboratório de Instrumentação e Simulação Computacional
-            </a> 
+            </a>
      
             <button id= "botao" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><title>menu</title><path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"></path></svg>
             </button>
           </div>
 
-          <div class="navbar-collapse collapse justify-content-md-center row pl-sm-4 pl-4" id="navbar-content" >
+          <div class="navbar-collapse collapse justify-content-md-center row p-2" id="navbar-content" >
             <ul class="navbar-nav flex-wrap justify-content-sm-center" id="nav-list">
               <li class="nav-item active">
-                <a class="nav-link" href="/index.html"><span>Home</span></a>
+                <a class="nav-link" href="/index.html">Home</a>
               </li>
+              <span class="py-2 d-md-flex d-none">/</span>
               <li class="nav-item">
                 <a class="nav-link" href="#">Laboratório Móvel</a>
               </li>
-              <li class="nav-item">
+              <span class="py-2 d-md-flex d-none">/</span>
+              <li class="nav-item ">
                 <a class="nav-link" href="#">Infraestrutura</a>
               </li>
+              <span class="py-2 d-md-flex d-none">/</span>
               <li class="nav-item">
                 <a class="nav-link" href="#">Prestação de Serviços</a>
               </li>
+              <span class="py-2 d-md-flex d-none">/</span>
               <li class="nav-item">
                 <a class="nav-link" href="#">Linhas de Pesquisa</a>
               </li>
+              <span class="py-2 d-md-flex d-none">/</span>
               <li class="nav-item">
                 <a class="nav-link" href="/equipe.html">Equipe</a>
               </li>
+              <span class="py-2 d-md-flex d-none">/</span>
               <li class="nav-item">
                 <a class="nav-link" href="#">Produção Científica</a>
               </li>
+              <span class="py-2 d-md-flex d-none">/</span>
               <li class="nav-item">
                 <a class="nav-link" href="#">Projetos</a>
               </li>
+              <span class="py-2 d-md-flex d-none">/</span>
               <li class="nav-item">
                 <a class="nav-link" href="#">Parcerias Internacionais</a>
               </li>
+              <span class="py-2 d-md-flex d-none">/</span>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contato</a>
               </li>
@@ -94,22 +102,29 @@
         </a>
       </div>
     </section>
+    
     <footer>
       <div class="container-fluid ">
         <div class="row flex-grow-1 justify-content-center py-4" id="footer">
           <div id="address" class="col-sm-12 col-md-4">
+            <span class="font-weight-bolder ">Endereço:</span><br>
             Instituto Federal de Educação Ciência e Tecnologia do Rio de Janeiro - Campus Paracambi (IFRJ-CPar)<br>
             Laboratório de Instrumentação e Simulação Computacional 28<br>
             R. Sebastião de Lacerda, S/N - Fábrica <br>
             Paracambi - RJ, 26600-000 <br>
             <hr class="d-md-none">
           </div>
-          <div class="col-sm-12 col-md-3 text-center">
-						MAPA
+          <div class="col-sm-12 col-md-4 text-center">
+						<div class="container-fluid">
+              <div class="map-responsive">
+                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC3ig2W0ehB0hCo__VlH5fUg3PiFtOoUAM&q=Polo%20CEDERJ%20Paracambi" allowfullscreen></iframe>
+              </div>
+            </div>
+            <hr class="d-md-none">
 					</div>
           <div id="IFRJ" class="col-md-4 text-center">
             <a href="index.html" id="logo-img">
-              <img class="rounded m-3" src="images/logo-ifrj.png" alt="Item" width="125px">
+              <img class="rounded m-3" src="images/logo-ifrj.png" alt="Item" width="220px">
             </a>
           </div>
           <hr class="col-md-11">
