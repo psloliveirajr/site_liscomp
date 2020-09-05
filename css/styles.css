@@ -1,9 +1,8 @@
 body {
     font-size: 16px;
-    background: linear-gradient(180deg,#00c8ff,#0072ff)!important;
+    background: white;
     font-family: 'Montserrat', sans-serif;
     color: #080808;
-    overflow: hidden;
 }
 
 a {
@@ -47,12 +46,13 @@ a {
     color: rgb(0, 0, 0);
     background:  #acacac;;
 }
-
+#main-content{
+    background-color: #fff;
+}
 .home-section:first-of-type {
     padding-top: 50px;
 }
 .home-section {
-    background-color: #fff;
     padding: 110px 0 110px 0;
 }
 
