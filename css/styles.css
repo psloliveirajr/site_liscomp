@@ -21,7 +21,7 @@ a {
 }
 #navbar-content {
     color: rgb(0, 0, 0);
-    background-color: #ffffff;
+    background-color: #acacac;
     border-bottom: 2px solid #afafaf;
 }
 
@@ -45,7 +45,75 @@ a {
 
 #footer {
     color: rgb(0, 0, 0);
-    background:  #ffffff;
+    background:  #acacac;;
+}
+
+.home-section:first-of-type {
+    padding-top: 50px;
+}
+.home-section {
+    background-color: #fff;
+    padding: 110px 0 110px 0;
+}
+
+.avatar-circle {
+    border-radius: 10%;
+}
+.avatar {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+ul.network-icon {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#profile {
+    text-align: center;
+    padding: 30px 10px;
+    position: relative;
+}
+
+#about {
+    padding: 30px 10px;
+}
+
+.portrait-title h2 {
+    font-size: 1.75em;
+    font-weight: 300;
+    color: #000000;
+    margin: 20px 0 10px 0;
+}
+
+.portrait-title h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(0,0,0,0.54);
+    margin: 0px 0 10px 0;
+}
+
+ul.ul-edu li .description p.course {
+    font-size: 0.9rem;
+}
+
+ul.ul-edu li .description p {
+    margin: 0;
+}
+
+.network-icon li {
+    margin-right: 10px;
+}
+
+.big-icon {
+    font-size: 2rem;
 }
 
 @media (min-width:576px){
